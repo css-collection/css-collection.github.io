@@ -1,0 +1,356 @@
+/* CSS made by bruhpoop69#6528 */
+
+#streamContainer {
+    display: none !important;
+}
+
+#newsHolder {
+    display: none !important;
+}
+
+#mapInfo {
+    display: none !important;
+}
+
+.imageButton {
+    display: none !important;
+}
+
+#ot-sdk-btn-floating.ot-floating-button {
+    display: none !important;
+}
+
+.button {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+
+.button {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+/* CSS made by bruhpoop69#6528 */
+
+.button:before {
+    content: '';
+    background: white;
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.button:active {
+    color: #000
+}
+
+.button:active:after {
+    background: transparent;
+}
+
+.button:hover:before {
+    opacity: 1;
+}
+
+.button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000 !important;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+/* CSS made by bruhpoop69#6528 */
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+#gameNameHolder {
+    display: none !important;
+}
+
+#instructions {
+    animation: none !important;
+}
+
+#policeButton {
+    display: none !important;
+}
+
+#mLevelCont {
+    display: none !important;
+}
+
+/* CSS made by bruhpoop69#6528 */
+
+#instructionsUpdate {
+    border-radius: 25px;
+    border: 5px solid white !important;
+    background-color: black !important;
+}
+
+.headerBar {
+    background-color: black !important;
+    border: 5px solid white !important;
+}
+
+.headerBarLeft {
+    border-radius: 0 0 24px 0 !important;
+}
+
+.headerBarRight {
+    border-radius: 0 0 0 25px !important;
+}
+
+#termsInfo {
+    position: absolute !important;
+    right: 10px !important;
+    bottom: -160px !important;
+    background-color: black !important;
+    border: 5px solid white !important;
+    border-radius: 25px 0px 0px !important;
+}
+
+/* CSS made by bruhpoop69#6528 */
+
+#menuClassName {
+    color: #fff0 !important;
+    text-shadow: none !important;
+}
+
+.button {
+    border: 5px solid white !important;
+    background-color: black !important;
+}
+
+#customizeButton {
+    height: 60px !important;
+}
+
+#menuClassSubtext {
+    color: rgb(255 255 255 / 0%) !important;
+    text-shadow: none !important;
+}
+
+#menuItemContainer {
+    position: absolute !important;
+    left: 353px !important;
+    top: 0px !important;
+    bottom: 0 !important;
+    width: 1597px !important;
+    flex-direction: row !important;
+    display: flex !important;
+    border: 5px solid white !important;
+    height: 81px !important;
+    border-radius: 0px 0px 25px 25px !important;
+    background-color: black !important
+}
+
+.menuItem {
+    border-radius: 25px !important;
+}
+
+/* CSS made by bruhpoop69#6528 */
+
+#subLogoButtons {
+    bottom: 70px !important;
+    display: flex !important;
+}
+
+.menuItem .menuItemTitle {
+    display: none !important;
+}
+
+#menuWindow {
+    background-color: black !important;
+    border-radius: 25px !important;
+    border: 5px solid white !important;
+    box-shadow: 0 0px 0 0 #a6a6a6 !important;
+}
+
+.element.style {
+    color: rgb(255 255 255) !important;
+}
+
+.b {
+    color: rgb(255 255 255 / 88%)!important;
+}
+
+.settName, .settNameSmall {
+    color: rgb(255 255 255) !important;
+}
+
+::-webkit-scrollbar {
+    width: 0px !important;
+}
+
+.hostMapImg {
+    border-radius: 25px !important;
+}
+
+.verticalSeparator {
+    background: rgb(255 255 255 / 0%) !important;
+}
+
+.progressBar {
+    background: rgb(74 73 73 / 90%) !important;
+    border-radius: 25px !important;
+}
+
+.hostMapBy {
+    color: #fff0 !important;
+}
+
+/* CSS made by bruhpoop69#6528 */
+
+.hostMapYear {
+    color: #fff0 !important;
+}
+
+.hostMapVersion {
+    color: #fff0 !important;
+}
+
+.blackShad {
+    text-shadow: none !important;
+}
+
+.serverHeader {
+    background-color: black !important;
+}
+
+#serverSearch {
+    border-radius: 25px !important;
+}
+
+/* CSS made by bruhpoop69#6528 */
+
+.slider2 {
+    border-radius: 25px !important;
+}
+
+.slider2:before {
+    border-radius: 25px !important;
+}
+
+.classCard {
+    border-radius: 25px !important;
+    background-color: rgb(58 56 56 / 45%) !important;
+}
+
+.classWeap {
+    color: rgb(255 255 255 / 0%) !important;
+}
+
+.mapInfoT {
+    color: #ffffff00 !important;
+}
+
+.button {
+    border-radius: 25px !important;
+}
+
+.button:after {
+    border-radius: 25px !important;
+}
+
+.settLabel {
+    color: rgb(175 172 172 / 30%) !important;
+}
+
+/* CSS made by bruhpoop69#6528 */
+
+.settText {
+    color: rgb(175 172 172 / 30%) !important;
+}
+
+.inputGrey2 {
+    color: rgb(175 172 172 / 30%) !important;
+}
+
+.shopCard {
+    border-radius: 25px !important;
+}
+
+.menuTabNew {
+    color: rgb(255 255 255 / 80%) !important;
+}
+
+/* CSS made by bruhpoop69#6528 */
+
+.iconProfile {
+    background-image: url(https://media.discordapp.net/attachments/709042064721182781/755895020472762378/profile-white.png);
+}
+
+.iconShop {
+    background-image: url(https://media.discordapp.net/attachments/709042064721182781/755895023182282894/shop-white.png);
+}
+
+.iconChall {
+    background-image: url(https://media.discordapp.net/attachments/709042064721182781/755895015309574344/chall-white.png);
+}
+
+.iconGames {
+    background-image: url(https://media.discordapp.net/attachments/709042064721182781/755895017595469894/games-white.png);
+}
+
+.iconMods {
+    background-image: url(https://media.discordapp.net/attachments/709042064721182781/755895018979328041/mods-white.png);
+}
+
+.iconSettings {
+    background-image: url(https://media.discordapp.net/attachments/709042064721182781/755895021894631554/settings-white.png);
+}
+
+.mapListThumb {
+    border-radius: 25px !important;
+}
+
+.settingsHeader {
+    background-color: black !important;
+}
+
+.menuSelectorHeader {
+    color: #ffffffc9 !important;
+}
+
+#uiBase.onMenu #chatHolder {
+    display: none;
+}
+
+#voiceDisplay {
+    display: none !important;
+}
+
+/* CSS made by bruhpoop69#6528 */

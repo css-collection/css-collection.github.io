@@ -1,0 +1,412 @@
+@font-face {
+    font-family: gamefont;
+    src: url(https://reizu.moe/fonts/Tahoma.ttf);
+}
+
+#chatHolder {
+    position: absolute;
+    z-index: 1000;
+    width: 280px;
+    bottom: 25px !important;
+    left: 3px;
+    transition: all 0.5s linear;
+}
+
+#uiBase.onMenu #chatHolder {
+    left: 5px;
+    bottom: 135px !important;
+}
+
+#menuItemContainer {
+    display: flex !important;
+    flex-direction: row !important;
+    height: 114.895px !important;
+    left: 0 !important;
+    position: absolute !important;
+    top: auto;
+    width: 100% !important;
+}
+
+#streakCount {
+    position: fixed;
+    transform: translateX(-50%);
+    top: 85%;
+    left: 50%;
+    background-color: transparent;
+}
+
+#streakIcon {
+    filter: drop-shadow(2px 2px 3px rgba(30, 30, 30, .5));
+}
+
+.kfItem {
+    border-radius: 0px;
+}
+
+#killStreakHolder {
+    position: fixed;
+    left: 53%;
+    top: 80%;
+}
+
+.killStreakItem {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+}
+
+#hudClassIcon {
+    display: none;
+}
+
+#healthValueHolder {
+    background-color: transparent;
+    width: 100px;
+    height: 65px;
+    border-radius: 0;
+    position: fixed;
+    left: 30%;
+    bottom: 25%;
+    padding: 0;
+    margin-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+    align-items: center;
+}
+
+#healthValue {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+    margin-top: 0;
+    will-change: unset;
+}
+
+#maxHP {
+    display: none;
+}
+
+#challIcon {
+    display: none !important;
+}
+
+#healthBar {
+    display: none;
+}
+
+#ammoDisplay {
+    background-color: transparent;
+    letter-spacing: 2px;
+    width: 100px;
+    height: 65px;
+    border-radius: 0;
+    position: fixed;
+    right: 31%;
+    bottom: 25%;
+    padding: 0;
+    padding-top: 0;
+    padding-left: 0;
+    transform: none;
+}
+
+#ammoVal {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-left: 12px;
+    text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+
+#ammoMax {
+    display: none;
+}
+
+#ammoIcon {
+    display: none;
+}
+
+#reloadMsg {
+    background: transparent !important;
+}
+
+#ot-sdk-btn-floating.ot-floating-button {
+    display: none !important;
+}
+
+#termsInfo {
+    display: none !important;
+}
+
+#gameNameHolder {
+    display: none !important;
+}
+
+#streamContainer {
+    display: none !important;
+}
+
+#newsHolder {
+    display: none !important;
+}
+
+#voiceDisplay {
+    display: none !important;
+}
+
+#killCard {
+    
+}
+
+#igXPBar {
+    display: none !important;
+}
+
+#curGameInfo {
+    display: none !important;
+}
+
+#menuWindow {
+    box-shadow: 0 0px 0 0 #ffffff00 !important;
+    border: 5px solid #ff4700 !important;
+    border-radius: 25px !important;
+}
+
+.settName, .settNameSmall {
+    color: rgb(255 255 255) !important;
+}
+
+.wepLink {
+    color: white !important;
+}
+
+.settText {
+    color: white !important;
+}
+
+::-webkit-scrollbar {
+    width: 0px !important;
+}
+
+#mapInfoHolder {
+    bottom: 120px !important;
+}
+
+#menuItemContainer {
+    border: 5px solid #ff4700 !important;
+    background-color: black !important;
+}
+
+.menuItem .menuItemTitle {
+    display: none !important;
+}
+
+.headerBarLeft {
+    border-radius: 0 0 25px 0 !important;
+    border: 5px solid #ff4700 !important;
+}
+
+.headerBarRight {
+    border-radius: 0 0 0 25px !important;
+    border: 5px solid #ff4700 !important;
+}
+
+.headerBar {
+    background-color: black !important;
+}
+
+#chatInput {
+    border: 2.5px solid #ff4700 !important;
+    background-color: black !important;
+    border-radius: 25px !important;
+}
+
+.chatItem {
+    border: 2.5px solid #ff4700 !important;
+    background-color: black !important;
+    border-radius: 25px !important
+}
+
+#policeButton {
+    display: none !important;
+}
+
+.button {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff813d, #ff5900, #db4d00, #db3300, #ff7429, #c44500, #ff5900, #db4d00, #db3300, #ff7429, #c44500, #ff813d);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 60s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.button:active {
+    color: #000
+}
+
+.button:active:after {
+    background: transparent;
+}
+
+.button:hover:before {
+    opacity: 1;
+}
+
+.button:after {
+    z-index: -1;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+#subLogoButtons {
+    display: flex;
+}
+
+.button {
+    background-color: black !important;
+    border: 4px solid #ff4700 !important;
+    box-shadow: inset 0 -7px 0 0 #ffffff00!important;
+}
+
+.menuItem:hover {
+    border-left: 0px solid #fff;
+}
+
+#instructionsUpdate {
+    border: 5px solid #ff4700 !important;
+    background-color: black !important;
+    border-radius: 25px !important;
+}
+
+#instructions {
+    animation: none !important;
+}
+
+.accountInput {
+    color: white !important;
+}
+
+#menuWindow {
+    background-color: black !important;
+    border: 5px solid #ff4700 !important;
+    border-radius: 25px !importantl
+}
+
+.settingsHeader {
+    background-color: black !important;
+}
+
+.serverHeader {
+    background-color: black !important;
+}
+
+.slide {
+    border: 2.5px solid #ff4700 !important;
+    border-radius: 25px !important;
+}
+
+.slideImg {
+    border-radius: 25px !important;
+}
+
+.shopCard {
+    border-radius: 25px !important;
+    border: 2.5px solid #ff4700 !important;
+}
+
+.menuTabNew {
+    color: rgb(255 255 255) !important;
+}
+
+#weapDisplay {
+    right: 810px;
+    bottom: 40px;
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+.weapKey {
+    color: #fff0 !important;
+}
+
+#mLevelCont {
+    display: none !important;
+}
+
+#newLeaderDisplay {
+    border-radius: 25px !important;
+    border: 2.5px solid #ff4700 !important;
+    background-color: black !important;
+    color: white !important;
+}
+
+#killCard {
+    border-radius: 25px !important;
+    border: 2.5px solid #ff4700 !important;
+    background-color: black !important;
+    color: white !important;
+}
+
+#kCProfile {
+    border-radius: 25px !important;
+}
+
+#endUI {
+    border-radius: 25px !important;
+    border: 5px solid #ff4700 !important;
+    background-color: black !important;
+    color: white !important;
+}
+
+#matchVoteHolder {
+    border-radius: 25px !important;
+    border: 2.5px solid #ff4700 !important;
+    background-color: black !important;
+    color: white !important;
+}
+
+.matchVote {
+    border-radius: 35px !important;
+}
+
+.teamTotals {
+    color: white !important;
+    background-color: black !important;
+}
+
+.endAHolder {
+    display: none !important;
+}
+
+.countIcon {
+    border-radius: 25px !important;
+    border: 5px solid #ff4700 !important;
+    background-color: black !important;
+    color: white !important;
+}

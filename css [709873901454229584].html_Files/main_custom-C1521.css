@@ -1,0 +1,95 @@
+@import url('https://reizu.moe/krunker/reizu.css');
+
+:root {
+	--accent-color: #eb99ff;
+	--health-color: #eb99ff;
+	--ammo-color: #ffffff;
+	--premium-color: #fbc02d;
+	--verified-color: #00ffff;
+	--menu-bg-color: rgba(15, 15, 15, .2);
+	--menu-bg-color-secondary: rgba(0, 0, 0, .5);
+	--ingame-bg-color: rgba(15, 15, 15, .2);
+}
+
+@font-face {
+	font-family: gamefont;
+	src: url(https://raw.githubusercontent.com/South-Paw/typeface-vag-rounded/master/files/vag-rounded-400.woff2);
+}
+
+@font-face {
+	font-family: hpammo;
+	src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2);
+}
+
+.standout::before {
+	content: 'PogChamp';
+}
+
+#healthValueHolder {
+	background-color: transparent;
+	width: 100px;
+	height: 65px;
+	border-radius: 0;
+	position: fixed;
+	left: 34%;
+	bottom: 20%;
+	padding: 0;
+	margin-bottom: 0;
+	padding-right: 0;
+	padding-left: 0;
+	align-items: center;
+}
+
+#healthValue {
+	color: var(--health-color);
+	font-family: hpammo;
+	font-size: 75px;
+	text-align: center;
+	text-shadow: 2px 2px 3px rgba(5, 5, 5, .5);
+	margin-top: 0;
+	will-change: unset;
+}
+
+#ammoDisplay {
+	background-color: transparent;
+	letter-spacing: 0;
+	width: 100px;
+	height: 65px;
+	border-radius: 0;
+	position: fixed;
+	right: 35%;
+	bottom: 20%;
+	padding: 0;
+	padding-top: 0;
+	padding-left: 0;
+	transform: none;
+}
+
+#ammoVal {
+	color: var(--ammo-color);
+	font-family: hpammo;
+	font-size: 75px;
+	margin-left: 12px;
+	text-shadow: 2px 2px 3px rgba(5, 5, 5, .5);
+}
+
+#weapDisplay {
+	display: flex !important;
+	flex-direction: row !important;
+	bottom: 20px;
+	right: 50%;
+	transform: translateX(50%);
+}
+
+.weapItem {
+	margin-top: 0;
+}
+
+.weapKey {
+	display: none;
+}
+
+.weapIcon {
+	width: 0px;
+	height: 0px;
+}

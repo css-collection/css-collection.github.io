@@ -1,0 +1,535 @@
+* {
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.menuItem {
+	color: rgb(255, 255, 255);
+	flex-grow: 1;
+	display: flex;
+	transition: all 0.1s ease 0s;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.75);
+	text-align: center;
+	pointer-events: all;
+	cursor: pointer;
+	border-radius: 10px;
+	border-style: solid
+}
+
+.iconProfile {
+	background-image: url(https://i.ibb.co/dWYRP2t/profile.png);
+}
+
+.iconShop {
+	background-image: url(https://i.ibb.co/gMBLncQ/shop.png);
+}
+
+.iconChall {
+	background-image: url(https://i.ibb.co/cw9034t/chall.png);
+}
+
+.iconSocial {
+	background-image: url(https://i.ibb.co/ZX6gLbs/social.png);
+}
+
+.iconGames {
+	background-image: url(https://i.ibb.co/PjxbGLC/maps.png);
+}
+
+.iconMods {
+	background-image: url(https://i.ibb.co/F7XwcSH/mods.png);
+}
+
+.iconSettings {
+	background-image: url(https://i.ibb.co/yFM2R8N/settings.png);
+}
+
+.menuItem:hover .iconProfile {
+	background-image: url(https://i.ibb.co/dWYRP2t/profile.png);
+}
+
+.menuItem:hover .iconShop {
+	background-image: url(https://i.ibb.co/gMBLncQ/shop.png);
+}
+
+.menuItem:hover .iconChall {
+	background-image: url(https://i.ibb.co/cw9034t/chall.png);
+}
+
+.menuItem:hover .iconSocial {
+	background-image: url(https://i.ibb.co/ZX6gLbs/social.png);
+}
+
+.menuItem:hover .iconGames {
+	background-image: url(https://i.ibb.co/PjxbGLC/maps.png);
+}
+
+.menuItem:hover .iconMods {
+	background-image: url(https://i.ibb.co/F7XwcSH/mods.png);
+}
+
+.menuItem:hover .iconSettings {
+	background-image: url(https://i.ibb.co/yFM2R8N/settings.png);
+}
+
+#aContainer {
+	display: none!important;
+}
+
+#braveWarning {
+	display: none!important;
+}
+
+#ot-sdk-btn-floating.ot-floating-button {
+	display: none;
+}
+
+#voiceDisplay {
+	display: none!important
+}
+
+#mapInfo {
+	display: none!important;
+}
+
+#termsInfo {
+	background-color: rgba(1, 0, 0, .7)!important;
+	box-shadow: 5px 5px 5px 5px transparent!important;
+	border-radius: 7px 30px;
+	border-style: solid;
+	border-width: thick!important;
+}
+
+#policeButton {
+	background-color: rgba(0, 0, 0, .6)!important;
+	box-shadow: 5px 5px 5px 5px transparent!important;
+	border-style: solid;
+	border-radius: 7px 30px;
+}
+
+.button {
+	border-style: solid;
+	background-color: rgba(1, 0, 0, .7)!important;
+	box-shadow: 5px 5px 5px 5px transparent!important;
+}
+
+.streamItem {
+	display: none!important;
+}
+
+#mLevelCont {
+	background-color: transparent!important;
+}
+
+.headerBarRight {
+    background-color: transparent!important;
+    border-style: none!important;
+}
+
+.headerBarLeft {
+    background-color: transparent!important;
+}
+
+.button.lgn {
+	padding-right: 15px;
+	border-radius: 10px 10px 50px;
+	border: 5px solid #f7f3f3;
+	background-color: rgba(250, 255, 249, 0.2);
+}
+
+#menuWindow {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	border-radius: 50px;
+	max-height: calc(100% - 480px);
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	overflow-y: auto;
+	display: inline-block;
+	text-align: left;
+	pointer-events: auto;
+	padding: 20px;
+	width: 705px;
+	font-size: 20px;
+	box-shadow: rgb(166, 166, 166) 0px 9px 0px 0px;
+	border: 5px solid white;
+	background-color: rgba(250, 255, 249, 0.3);
+}
+
+.button.lgn {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+#mainLogo {
+	margin-top: 50px;
+	margin-bottom: -40px;
+	height: 175px
+}
+
+.countIcon {
+	color: rgb(255 255 255);
+	display: inline-block;
+	margin-bottom: 0px;
+	background-color: rgb(228 19 19 / 0%);
+	padding: 0px;
+	font-size: 36px;
+	padding-right: 16px;
+	padding-left: 10px;
+	border-radius: 0px;
+	text-align: center;
+	flex-direction: row
+}
+
+#killsVal:after {
+	content: 'Kills';
+	display: flex;
+	flex-direction: column-reverse;
+	font-size: 18px;
+	text-align: center
+}
+
+#deathsVal:after {
+	content: 'Deaths';
+	display: flex;
+	flex-direction: column-reverse;
+	font-size: 18px;
+	text-align: center
+}
+
+#streakVal:after {
+	content: 'Streak';
+	display: flex;
+	flex-direction: column-reverse;
+	font-size: 18px;
+	text-align: center
+}
+
+#myScoreVal:after {
+	content: 'kekw';
+	display: flex;
+	flex-direction: column-reverse;
+	font-size: 18px;
+	text-align: center
+}
+
+#killsVal,
+#deathsVal,
+#streakVal,
+#myScoreVal {
+	color: white;
+}
+
+#braveWarning #killsIcon,
+#deathsIcon,
+#streakIcon {
+	display: none
+}
+
+#weapDisplay {
+	position: absolute!important;
+	flex-direction: row !important;
+	display: flex !important;
+	right: 1470px;
+}
+
+#timerDisplay {
+	text-align: left;
+	z-index: 3;
+	padding: 10px;
+	padding-right: 20px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	will-change: transform;
+	transform: translateZ(0);
+	border-radius: 10px;
+	vertical-align: top
+}
+
+#timerVal {
+	color: #fff;
+	padding-left: 3px;
+	font-size: 32px;
+	will-change: transform;
+	transform: translateZ(0)
+}
+
+#timerDisplay {
+	text-align: left;
+	z-index: 3;
+	padding: 10px;
+	padding-right: 20px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	will-change: transform;
+	transform: translateZ(0);
+	border-radius: 10px;
+	vertical-align: top
+}
+
+#timerIcon {
+	display: none!important
+}
+
+.button {
+	border-radius: 6px 30px
+}
+
+.button:hover {
+	background-color: rgba(0, 0, 0, .6)!important;
+	border-radius: 30px 6px;
+	box-shadow: 0px 0px 0px 0px transparent!important;
+}
+
+#killsIcon {
+	display: none!important;
+}
+
+#chatInput {
+	background-color: rgba(0, 0, 0, 0.25) !important;
+	font-size: 16px;
+	border-radius: 0px 0px 12px 12px;
+}
+
+#chatInput::placeholder {
+	color: rgba(255, 255, 255, .5) !important;
+}
+
+#chatHolder {
+	bottom: 166px !important;
+	left: 10px !important;
+	background-color: rgba(0, 0, 0, .2) !important;
+	border-radius: 12px;
+}
+
+#uiBase.onMenu #chatHolder {
+	bottom: 20px !important;
+	left: 150px !important;
+	background-color: rgba(0, 0, 0, .2) !important;
+}
+
+.chatItem {
+	border-radius: 0;
+	background-color: transparent;
+    transition-duration: 2s
+}
+
+#policeButton:hover {
+    border-radius: 30px 7px;
+}
+
+#weapDisplay {
+    top: 1300px;
+}
+
+#healthValueHolder {
+    background-color: transparent;
+    width: 100px;
+    height: 65px;
+    border-radius: 10px;
+    position: fixed;
+    left: 30%;
+    bottom: 25%;
+    padding: 0;
+    margin-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+    align-items: center;
+}
+
+#healthValue {
+    color: white!important;
+    font-size: 60px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+    margin-top: 0;
+    will-change: unset;
+}
+
+#maxHP {
+    display: none;
+}
+
+#challIcon {
+    display: none !important;
+}
+
+#healthBar {
+    display: none;
+}
+
+#ammoDisplay {
+    background-color: transparent;
+    letter-spacing: 2px;
+    width: 100px;
+    height: 65px;
+    border-radius: 0;
+    position: fixed;
+    right: 31%;
+    bottom: 25%;
+    padding: 0;
+    padding-top: 0;
+    padding-left: 0;
+    transform: none;
+}
+
+#ammoVal {
+    color: White!important;
+    font-size: 70px;
+    margin-left: 12px;
+    text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+
+#ammoMax {
+    display: none;
+}
+
+#ammoIcon {
+    display: none;
+}
+
+#hudClassIcon {
+    display: none!important;
+}
+
+#newsHolder {
+  width: 100px;
+  height: 100px;
+  background: transparent!important;
+  transition: width 1.5s;
+  border-style: solid!important;
+  color: white!important;
+  border-width: 7px
+}
+
+#newsHolder:hover {
+  visibility: visible;
+  width: 300px;
+  height: 300px
+}
+
+.settingsHeader, .serverHeader {
+    background-color: transparent!important;
+}
+
+#timerDisplay {
+    text-align: center;
+    position: fixed;
+    transform: translateX(-50%);
+    top: 109px;
+    left: 1675px;
+    width: 250px;
+    height: 100px;
+    padding: 0;
+    padding-left: 5px!important;
+    padding-top: 5px!important;
+    padding-right: 5px!important;
+    padding-bottom: 5px!important;
+    margin-left: 0;
+    margin-top: -0.3%;
+    margin-right: 0;
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: transparent!important;
+    will-change: unset;
+    text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+
+#timerVal {
+    font-size: 50px;
+    padding-left: 0;
+    will-change: unset;
+}
+
+#teamScores {
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 685px;
+    height: 50px;
+    padding: 10px;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: transparent;
+    text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+
+.tScore {
+    display: inline-block;
+}
+
+#tScoreV1 {
+    position: fixed;
+    left: -25%;
+    top: 4px;
+}
+
+#tScoreV2 {
+    position: fixed;
+    left: 25%;
+    top: 4px;
+}
+
+.tScoreT {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+    z-index: 2;
+}
+
+.tScoreM {
+    display: none;
+}
+
+.tScoreF {
+    left: 50%;
+    width: 100px;
+    height: 80px;
+    margin-left: 123px;
+    margin-right: 116px;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #f70202;
+    color: transparent;
+    opacity: 50%;
+    z-index: 1;
+}
+
+.tScoreF.you {
+    background-color: #061bf0;
+    color: transparent;
+    opacity: 50%;
+    z-index: 1;
+}
+
+.tScoreC {
+    left: 50%;
+    width: 100px;
+    height: 80px;
+    margin-left: 123px;
+    margin-right: 116px;
+    background-color: #f70202;
+    opacity: 50%;
+    z-index: 1;
+}
+
+.tScoreC.you {
+    background-color: #061bee;
+    opacity: 50%;
+    z-index: 1;
+}

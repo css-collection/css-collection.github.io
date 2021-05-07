@@ -1,0 +1,193 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 1000;
+}
+
+.ot-floating-button {
+    display: none!important
+}
+
+.menuItem {
+    background-color: transparent!important;
+}
+
+.menuItem .menuItemTitle {
+    color: #ce05f3
+}
+
+.iconProfile {
+    background-image: url(https://cdn.discordapp.com/attachments/709042064721182781/732836770835857408/profile.png);
+    transform:scale(0.9)
+}
+.menuItem:hover .iconProfile {
+    background-image: url(https://cdn.discordapp.com/attachments/709042064721182781/732836770835857408/profile.png)
+}
+
+.iconChall {
+    background-image: url(https://cdn.discordapp.com/attachments/709042064721182781/732836700941713448/chall.png);
+    transform:scale(0.9)
+}
+
+.menuItem:hover .iconChall {
+    background-image: url(https://cdn.discordapp.com/attachments/709042064721182781/732836700941713448/chall.png)
+}
+
+.iconGames {
+    background-image: url(https://cdn.discordapp.com/attachments/709042064721182781/732836727252582480/games.png);
+    transform:scale(0.9)
+}
+
+.menuItem:hover .iconGames {
+    background-image: url(https://cdn.discordapp.com/attachments/709042064721182781/732836727252582480/games.png)
+}
+.iconMods {
+    background-image: url(https://cdn.discordapp.com/attachments/709042064721182781/732836750136836156/mods.png)
+}
+
+.menuItem:hover .iconMods {
+    background-image: url(https://cdn.discordapp.com/attachments/709042064721182781/732836750136836156/mods.png)
+}
+
+.iconSettings {
+    background-image: url(https://cdn.discordapp.com/attachments/709042064721182781/732836791358324869/settings.png)
+}
+
+.menuItem:hover .iconSettings {
+    background-image: url(https://cdn.discordapp.com/attachments/709042064721182781/732836791358324869/settings.png)
+}
+
+.iconSocial {
+    background-image: url(https://cdn.discordapp.com/attachments/709042064721182781/732836832785465364/social.png);
+    transform:scale(0.9)
+}
+
+.menuItem:hover .iconSocial {
+    background-image: url(https://cdn.discordapp.com/attachments/709042064721182781/732836832785465364/social.png)
+}
+
+.iconShop {
+    background-image: url(https://cdn.discordapp.com/attachments/709042064721182781/732836812862783578/shop.png)
+}
+
+.menuItem:hover .iconShop {
+    background-image: url(https://cdn.discordapp.com/attachments/709042064721182781/732836812862783578/shop.png)
+}
+
+.menuItem {
+    border-radius: 50px
+}
+
+.button.lgn {
+    border-radius: 50px
+}
+
+.button.lgn {
+    background-color: #f3516d!important;
+}
+
+#aContainer {
+    display: none!important;
+}
+
+.button {
+    border-radius: 50px
+}
+
+.button {
+    color: #d07c8a
+}
+
+.button {
+    background-color: black!important;
+}
+
+.button {
+    box-shadow: 5px 5px 5px 5px transparent!important;
+}
+
+.button:hover {
+    background-color: black!important;
+}
+
+.button:hover {
+    box-shadow: 5px 5px 5px 5px transparent!important;
+}
+
+#policeButton {
+    border-radius: 30px
+}
+
+#menuRegionLabel {
+    color: pink!important;
+}
+
+#voiceDisplay {
+    display: none!important;
+}
+
+#chatInput {
+    width: 350px
+}
+
+#chatInput {
+    border-radius: 50px
+}
+
+#chatInput {
+    text-align: center;
+}
+
+#chatInput {
+    color: #e44762
+}
+
+#chatInput {
+    line-height: 2.5
+}
+
+.chatItem {
+    width: 500px
+}
+
+.chatItem {
+    border-radius: 50px
+}
+
+.chatItem {
+    line-height: 2
+}
+
+.chatItem {
+    color: #75ec08!important;
+}
+
+.chatMsg {
+    color: #f5647d!important;
+}
+
+@font-face {
+  font-family: gamefont;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2)
+}
+
+.standout::before {
+    content: 'CSS by ThatRandomGuy#0001';
+    font-size: 21.5px;
+    margin-right: 22px;
+    color: rgba(255, 255, 255, .5);
+    visibility: visible;
+    webkit-animation: rainbowT .5s linear infinite;
+    animation: rainbowT 1s linear infinite;
+}
+
+#menuWindow {
+    border-radius: 50px
+}
+
+#menuWindow {
+    background-color: pink!important;
+}
+
+.settingsHeader {
+    background-color: transparent!important;
+}

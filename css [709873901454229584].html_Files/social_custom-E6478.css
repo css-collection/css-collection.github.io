@@ -1,0 +1,176 @@
+html, body {
+    background-color: #6d6d6d;
+    padding: 0;
+    background-image: url(https://cdn.discordapp.com/attachments/756335760335962194/771421402976485427/8a13298cc9c8eca831663a56b6645ef7.png);
+    background-repeat: repeat;
+    background-size: 1920px 1080px;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    overflow: hidden;
+    margin: 0;
+}
+
+#backgroundImage {
+    display: none!important;
+}
+
+#aContainer {
+     display: none!important;
+}
+
+#steamDB {
+    display: none!important;
+}
+
+#iosDB {
+    display: none!important;
+}
+
+#androidDB {
+    display: none!important;
+}
+
+.terms {
+    display: none!important;
+}
+
+#navButtons {
+    top: 160px;
+    left: 96%;
+    position: absolute;
+    z-index: 11;
+    display: flex;
+    flex-direction: column
+}
+.regionSelHolder {
+    display: inline-block;
+    margin-top: 7px;
+    position: fixed;
+    top: 18px;
+    right: 80%;
+}
+
+.socPost {
+    background-color: transparent!important;
+    box-shadow: 2px 2px 2px 2px black!important;
+    border-radius: 50px
+}
+
+#rightFollBox {
+    background-color: transparent!important;
+    box-shadow: 2px 2px 2px 2px black!important;
+    border-radius: 50px
+}
+
+#rightABox {
+    display: none!important;
+}
+
+#leftABox {
+    background-color: transparent!important;
+    box-shadow: 2px 2px 2px 2px black!important;
+    border-radius: 50px
+}
+
+#leftYTBox {
+    background-color: transparent!important;
+    box-shadow: 2px 2px 2px 2px black!important;
+    border-radius: 50px
+}
+
+#navBar {
+    background-color: transparent!important;
+}
+
+#profileLogin {
+    background-color: transparent!important;
+    box-shadow: 2px 2px 2px 2px black!important;
+    border-radius: 50px
+}
+
+#searchPInput {
+    background-color: transparent!important;
+    box-shadow: 2px 2px 2px 2px black!important;
+    border-radius: 50px
+}
+
+.feedTab {
+    background-color: transparent!important;
+    box-shadow: 2px 2px 2px 2px black!important;
+    border-radius: 50px
+}
+
+.leaderBtn {
+    background-color: transparent!important;
+    box-shadow: 2px 2px 2px 2px black!important;
+    border-radius: 50px
+}
+
+#marketSearchB {
+    background-color: transparent!important;
+    box-shadow: 2px 2px 2px 2px black!important;
+    border-radius: 50px
+}
+
+#m_blackm {
+     background-color: transparent!important;
+}
+
+#m_stats {
+    background-color: transparent!important;
+}
+
+.leaderNav2 {
+    background-color: transparent!important;
+}
+
+.leaderBtn2 {
+    background-color: transparent!important;
+    box-shadow: 2px 2px 2px 2px black!important;
+    border-radius: 50px
+}
+
+.scrollItem {
+    background-color: transparent!important;
+    box-shadow: 5px 5px 5px 5px transparent!important;
+}
+
+.sideBarHeader {
+    color: #09090a
+}
+
+.mapListItem {
+    ackground-color: transparent!important;
+    box-shadow: 2px 2px 2px 2px black!important;
+    border-radius: 30px
+}
+
+#searchInput {
+    border-radius: 50px
+}
+
+#editorDB {
+    display: none!important
+}
+
+.mapListItem {
+    background-color: transparent!important;
+}
+
+#settingsPop {
+    border-radius: 50px    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

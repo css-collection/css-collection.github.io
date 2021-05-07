@@ -1,0 +1,328 @@
+html,  body {
+    background-image: url(https://media.giphy.com/media/lgTpcy4dkdUc0/giphy.gif);
+    background-size: cover    
+}
+
+.marketPrice {
+    position: absolute;
+    left: 50px;
+    background-color: transparent;
+    color: pink
+} 
+
+.cardActions {
+    background-image: url(https://i.pinimg.com/originals/47/2a/87/472a87f0223984a2497781d50a7dd156.jpg);
+    background-size: cover
+}
+
+.cardAction {
+    color: pink
+}
+
+.leaderBtn {
+    border-radius: 50px;
+    background-color: #190a03!important;
+    color: pink!important
+}
+
+.leaderBtn:hover {
+    background-color: pink!important;
+    color: black!important;
+    transition: 0.4s;
+}
+
+#marketSearchB {
+    border-radius: 50px;
+    background-color: #ffc0cb;
+    color: black
+}
+
+#chatScroller {
+    padding-bottom: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 9999;
+    position: absolute;
+    top: 85px;
+    bottom: 0;
+    background-color: #ffc0cb1c;
+    text-align: center;
+}
+
+#navBar {
+    color: #fff;
+    background-color: #ffc0cb1c;
+    width: 100%;
+    height: 85px;
+}
+
+#navTitle {
+    top: 12px;
+    position: absolute;
+    font-size: 35px;
+    color: black;
+    z-index: 11;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+#hubBox {
+    display: inline-block;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: -14px;
+    vertical-align: middle;
+    font-size: 30px;
+    color: pink;
+    background-color: black;
+    border-radius: 5px;
+}
+
+#profileName {
+    color: pink;
+    text-align: left;
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.scrollItemNew {
+    vertical-align: top;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: left;
+    background-color: #20202047;
+    -webkit-box-shadow: 0 7px 0 0 #d8d8d8;
+    -moz-box-shadow: 0 7px 0 0 #d8d8d8;
+    box-shadow: 0 7px 0 0 #d8d8d8;
+    display: inline-block;
+    border-radius: 4px;
+    overflow-y: auto;
+    width: 900px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    overflow: hidden;
+    max-height: unset;
+    position: relative;
+}
+
+* {
+    outline: none;
+    font-family: gamefont;
+    color: rgba(255,255,255,.8);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.pSt strong {
+    color: #c7949d;
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: none;
+    text-shadow: none;
+}
+
+.leftMidHolder {
+    left: 130px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 15px;
+    position: absolute;
+}
+
+.follCount {
+    color: white;
+    font-size: 11px;
+    vertical-align: top;
+    margin-top: 2px;
+    margin-left: 4px;
+    position: relative;
+    top: 3px;
+}
+
+#marketSearchB:hover {
+    background-color: black;
+    color: pink;
+    transition: 0.4s
+}
+
+.material-icons {
+    color: pink!important;
+
+}
+
+#m_stats {
+    color: #fff;
+    background-color: black!important;
+    margin-right: 2px;
+    vertical-align: top;
+    padding-left: 5px;
+    padding-bottom: 2px;
+    padding-top: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#m_stats:hover {
+    background-color: black!important;
+}
+
+
+.scrollItem {
+    vertical-align: top;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 680px;
+    text-align: left;
+    background-color: #20202066;
+    -webkit-box-shadow: 0 7px 0 0 #d8d8d8;
+    -moz-box-shadow: 0 7px 0 0 #d8d8d8;
+    box-shadow: 0 7px 0 0 #2020206b;
+    display: inline-block;
+    border-radius: 12px;
+    max-height: calc(100% - 40px);
+    overflow-y: auto;
+}
+
+.lName {
+    color: #cc6678
+}
+
+a:visited {
+    color: #cc6678
+}
+
+.leaderNav2 {
+    margin-bottom: 20px;
+    margin-top: -25px;
+    width: 680px;
+    color: #fff!important;
+    background-color: #000000ab;
+    padding: 5px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    display: inline-block;
+    clip-path: polygon(0 0,100% 0,95% 100%,5% 100%);
+}    
+
+
+.leaderBtn2 {
+    color: black!important;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 17px;
+    margin-top: 5px;
+    padding-left: 17px;
+    padding-right: 17px;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: pink
+}
+
+.scrollItem {
+    vertical-align: top;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 680px;
+    text-align: left;
+    background-color: #20202066;
+    -webkit-box-shadow: 0 7px 0 0 #d8d8d8;
+    -moz-box-shadow: 0 7px 0 0 #d8d8d8;
+    box-shadow: 0 7px 0 0 #2020206b;
+    display: inline-block;
+    border-radius: 12px;
+    max-height: calc(100% - 40px);
+    overflow-y: auto;
+}
+
+.regionCard {
+    vertical-align: top;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 10px 20px 20px;
+    text-align: left;
+    background-color: #20202054;
+    -webkit-box-shadow: 0 7px 0 0 #d8d8d8;
+    -moz-box-shadow: 0 7px 0 0 #d8d8d8;
+    box-shadow: 0 7px 0 0 #d8d8d8;
+    display: inline-block;
+    border-radius: 12px;
+    width: calc(100% - 40px);
+}
+
+#aContainer {
+    display: none!important;
+}
+
+.cardEst {
+     position: absolute;
+    left: 50px;
+    background-color: transparent;
+    color: pink
+} 
+
+#invValue span {
+    color: pink!important;
+}
+
+.cardCnt {
+    background-color: transparent
+}
+
+#feedTabs span {
+	color: black;
+}
+
+.socPost {
+    margin-left: -15px;
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 25px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 680px;
+    text-align: left;
+    background-color: #20202063;
+    -webkit-box-shadow: 0 7px 0 0 #d8d8d8;
+    -moz-box-shadow: 0 7px 0 0 #d8d8d8;
+    box-shadow: 0 7px 0 0 #d8d8d8;
+    border-radius: 12px;
+}
+
+.likesHolder {
+    width: 100%;
+    margin-right: -10px;
+    text-align: right;
+    margin-top: 10px;
+    font-size: 17px;
+    color: rgb(255 255 255);
+}
+
+#postLink span {
+	color: white;
+}
+
+a:visited {
+    color: pink;
+}

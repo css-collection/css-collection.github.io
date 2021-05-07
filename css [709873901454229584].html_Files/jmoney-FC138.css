@@ -1,0 +1,1289 @@
+@font-face {
+	font-family: gamefont;
+	src: url(https://dl.dropboxusercontent.com/s/ok5a9i8e6wyf1ar/font1.ttf?dl=0)
+}
+
+@font-face {
+	font-family: headerfont;
+	src: url(https://dl.dropboxusercontent.com/s/ok5a9i8e6wyf1ar/font1.ttf?dl=0)
+}
+
+* {
+    color: #ffffff;
+}
+
+[style*="color:rgba(0,0,0,0.3)"] {
+    color: rgba(255, 255, 255, .5) !important;
+}
+
+[style*="font-size:20px;color:#fff;display:inline-block;"] {
+    color: #ffffff !important;
+}
+
+[style*="margin-top:10px;font-size:20px;color:rgba(255,255,255,0.4)"] {
+    display: none !important;
+}
+
+a {
+    color: #ffffff;
+}
+
+a:active {
+    color: #ffffff;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#uiBase.onMenu #spectButton {
+    text-transform: none;
+}
+
+#aMerger {
+    text-align: center;
+    display: inline-block!important;
+    min-width: 728px;
+    min-height: 90px;
+    pointer-events: auto;
+}
+
+#claimTimer {
+    text-transform: none;
+}
+
+#braveWarning {
+    display: none !important;
+}
+
+
+.iconProfile {
+	background-image: url(../img/menu-icons/profile.png)
+}
+
+.menuItem:hover .iconProfile {
+	background-image: url(../img/menu-icons/profile-white.png)
+}
+
+.iconRanked {
+	background-image: url(../img/menu-icons/ranked.png)
+}
+
+.menuItem:hover .iconRanked {
+	background-image: url(../img/menu-icons/ranked-white.png)
+}
+
+.iconShop {
+	background-image: url(../img/menu-icons/shop.png)
+}
+
+.menuItem:hover .iconShop {
+	background-image: url(../img/menu-icons/shop-white.png)
+}
+
+.iconSocial {
+	background-image: url(../img/menu-icons/social.png)
+}
+
+.menuItem:hover .iconSocial {
+	background-image: url(../img/menu-icons/social-white.png)
+}
+
+.iconMaps {
+	background-image: url(../img/menu-icons/maps.png)
+}
+
+.menuItem:hover .iconMaps {
+	background-image: url(../img/menu-icons/maps-white.png)
+}
+
+.iconGames {
+	background-image: url(../img/menu-icons/games.png)
+}
+
+.menuItem:hover .iconGames {
+	background-image: url(../img/menu-icons/games-white.png)
+}
+
+.iconMods {
+	background-image: url(../img/menu-icons/mods.png)
+}
+
+.menuItem:hover .iconMods {
+	background-image: url(../img/menu-icons/mods-white.png)
+}
+
+.iconSettings {
+	background-image: url(../img/menu-icons/settings.png)
+}
+
+.menuItem:hover .iconSettings {
+	background-image: url(../img/menu-icons/settings-white.png)
+}
+
+.iconChall {
+	background-image: url(../img/menu-icons/chall.png)
+}
+
+
+.button {
+    border-radius: 40px;
+    background-color: #000000;
+    box-shadow: inset 0 -0px 0 0 #b80f0a;
+    color: #ffffff;
+    text-shadow: -1px -1px 0 #202020, 1px -1px 0 #202020, -1px 1px 0 #202020, 1px 1px 0 #202020, -2px -2px 0 #202020, 2px -2px 0 #202020, -2px 2px 0 #202020, 2px 2px 0 #202020;
+}
+
+.buttonG {
+    background-color: #000000!important;
+    box-shadow: inset 0 -5px 0 0 #b80f0a!important;
+}
+
+.buttonR {
+    background-color: #000000!important;
+    box-shadow: inset 0 -5px 0 0 #b80f0a!important;
+    color: #ffffff;
+}
+
+.buttonP {
+    background-color: #000000!important;
+    box-shadow: inset 0 -5px 0 0 #b80f0a!important;
+    color: #fffff;
+}
+
+.buttonG {
+    background-color: #000000!important;
+    box-shadow: inset 0 -5px 0 0 #b80f0a!important;
+}
+
+.buttonPI {
+    background-color: #000000!important;
+    box-shadow: inset 0 -7px 0 0 #b80f0a!important;
+}
+
+.buttonB {
+    background-color: #000000!important;
+    box-shadow: inset 0 -7px 0 0 #b80f0a!important;
+}
+
+.centSwitch {
+    margin-top: 0;
+}
+
+.sliderCent {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.sliderCent:before {
+    border-radius: 0;
+    background-color: #fff;
+}
+
+.settText {
+    color: #ffffff;
+}
+
+.settText:hover {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.settLabel {
+    font-size: 18px;
+}
+
+.settLabel[style*="color:#2196F3"] {
+    color: #ffffff !important;
+}
+
+.wepLink {
+    font-size: 18px;
+}
+
+.wepLink:hover {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.floatR {
+    font-size: 18px;
+}
+
+.settName, .settNameSmall {
+    color: #b80f0a;
+    font-size: 18px;
+    margin-top: 20px !important;
+}
+
+.b {
+    color: #fff !important;
+}
+
+.setHed {
+    color: #fff;
+    font-size: 18px;
+}
+
+.plusOrMinus {
+    font-size: 36px !important;
+    margin-right: -8px !important;
+}
+
+.floatR [style*="color:rgba(0,0,0,0.5)"] {
+    color: #ffffff !important;
+}
+
+.terms {
+    color: #ffffff;
+    text-transform: none;
+}
+
+.terms:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.headerBarLeft {
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.headerBarRight {
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.verticalSeparator {
+    background-color: transparent;
+}
+
+.headerBarRight .verticalSeparator {
+    display: none;
+}
+
+#menuMiniProfilePic {
+    display: none;
+}
+
+#menuAccountUsername {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+#menuKRCount {
+    font-size: 16px;
+}
+
+#menuLevelIcon {
+    display: none;
+}
+
+#menuLevelText {
+    font-size: 16px;
+    text-transform: none;
+}
+
+#mailIcon:hover {
+    opacity: 1;
+    transform: none
+}
+
+.menuClassPlayerVirus {
+    display: none;
+}
+
+#menuClassSubtext {
+    text-shadow: none;
+    text-transform: none;
+}
+
+#menuClassName {
+    text-shadow: none;
+    text-transform: none;
+}
+
+.progressBarInner {
+    background: #ffffff;
+}
+
+.krSocial {
+    display: none;
+}
+
+.strmViews {
+    font-size: 17px;
+    color: #fbc02d;
+}
+
+.imageButton {
+    display: none !important;
+}
+
+#customizeButton {
+    width: 300px;
+    text-align: center;
+    padding: 15px;
+    font-size: 23px;
+    pointer-events: all;
+    padding-bottom: 22px;
+    text-shadow: -1px -1px 0 #202020,1px -1px 0 #202020,-1px 1px 0 #202020,1px 1px 0 #202020,-2px -2px 0 #202020,2px -2px 0 #202020,-2px 2px 0 #202020,2px 2px 0 #202020,-3px -3px 0 #202020,3px -3px 0 #202020,-3px 3px 0 #202020,3px 3px 0 #202020!important;
+}
+
+#menuRegionLabel {
+    text-transform: none;
+}
+
+.material-icons {
+    font-size: 16px;
+}
+
+.mailObj {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 0;
+}
+
+.mailObj {
+    border-radius: 6px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(0,0,0,.1);
+    margin-top: 10px;
+    color: rgb(255 255 255);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.mailFrom {
+    color: #ffffff;
+}
+
+.menuItem {
+    align-items: center;
+    background: transparent;
+    padding-bottom: 5px;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.menuItem:hover {
+    background: transparent;
+    color: #fff;
+}
+
+.menuItem:active {
+    background: transparent;
+    color: #fff;
+}
+
+.menuItem .menuItemTitle {
+    margin-top: 0;
+    /* color: #ffffff !important; */
+    font-size: 18px !important;
+    text-transform: none;
+    transition: all .2s;
+}
+.menuItemTitle:hover {
+    color: #fff !important;
+}
+
+.menuItemTitle:active {
+    color: #fff !important;
+}
+
+#menuWindow {
+    max-height: calc(100% - 360px) !important;
+    background-color: rgb(53 2 2 / 60%);
+    box-shadow: none;
+    border-radius: 0
+}
+
+.menuTabsNew {
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.menuTabNew {
+    color: #ffffff;
+}
+
+.menuTabNew:hover {
+    color: #fff;
+    border-bottom: none !important;
+}
+
+.tabANew {
+    color: #fff !important;
+    border-bottom: none !important;
+}
+
+.tabANew:hover {
+    border-bottom: none !important;
+}
+
+#settingsTabLayout {
+    background-color: transparent !important;
+    font-size: 18px;
+}
+
+.settingsBtn {
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.settingTab:hover {
+    color: #fff;
+    border-bottom: none !important;
+}
+
+.menuLink {
+    font-size: 18px;
+}
+
+.menuLink:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+#profilePicM {
+    border-radius: 0;
+}
+
+.xpBar {
+    height: 20px;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 0;
+}
+
+.xpBarB {
+    background-color: #ffffff;
+}
+
+.xpBarV {
+    top: 7px;
+}
+
+.settingsHeader {
+    background-color: transparent;
+    position: relative;
+}
+
+#requiresRestart {
+    display: none;
+}
+
+.serverHeader {
+    background-color: transparent;
+    position: relative;
+}
+
+.menuSelectorHeader {
+    font-size: 18px;
+}
+
+.menuSelector {
+    font-size: 18px;
+}
+
+#serverSearch,
+#settSearch {
+    background-color: rgba(0, 0, 0, .5);
+    font-size: 18px;
+    border-radius: 0;
+}
+
+#serverSearch::placeholder,
+#settSearch::placeholder {
+    color: rgba(255, 255, 255, .5);
+    font-size: 18px;
+}
+
+.quickJoin {
+    background-color: #ffffff;
+    border-radius: 0;
+}
+
+.partyAvatar {
+    border-radius: 0;
+}
+
+.jQR {
+    background-color: transparent !important;
+    color: #ffffff !important;
+    box-shadow: none !important;
+}
+
+.jQR:hover {
+    color: #fff !important;
+    box-shadow: none !important;
+}
+
+.jQR:active {
+    color: #fff !important;
+    box-shadow: none !important;
+}
+
+.joinQueue {
+    background-color: transparent;
+    color: #ffffff;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.joinQueue:hover {
+    height: 60px;
+    margin-top: 10px;
+    color: #fff;
+    box-shadow: none;
+}
+
+.joinQueue:active {
+    height: 60px;
+    margin-top: 10px;
+    color: #fff;
+    box-shadow: none;
+}
+
+#modDropper {
+    background-color: rgba(0, 0, 0, .5);
+    border: 4px solid transparent;
+}
+
+.classCard {
+    background-color: transparent;
+    text-shadow: none;
+}
+
+.classImgC {
+    border-radius: 0;
+}
+
+.classXPBar {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 0;
+}
+
+.clsXPBarC {
+    background-color: #ffffff;
+}
+
+.skinColorItem {
+    border: none;
+}
+
+.switch {
+    margin-bottom: 0;
+}
+
+.slidecontainer {
+    margin-top: 3px;
+}
+
+.slider {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.slider::before {
+    border-radius: 0;
+}
+
+input:checked+.slider {
+    background-color: #ffffff;
+}
+
+input:focus+.slider {
+    box-shadow: none;
+}
+
+.slider2 {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.slider2::before {
+    border-radius: 0;
+}
+
+input:checked+.slider {
+    background-color: #b80f0a;
+}
+
+input:focus+.slider2 {
+    box-shadow: none;
+}
+
+.sliderM {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, .5); !important;
+}
+
+.sliderM::-webkit-slider-thumb {
+    border-radius: 0;
+    background: #ffffff;
+}
+
+.sliderM::-moz-range-thumb {
+    border-radius: 0;
+    background: #ffffff;
+}
+
+.sliderSml {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 0;
+}
+
+.sliderSml:before {
+    background-color: #fff;
+    border-radius: 0;
+}
+
+input {
+    background: rgba(0, 0, 0, .5); !important;
+    color: #ffffff !important;
+    border-radius: 0 !important;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, .5) !important;
+}
+
+input[type=color] {
+    border: 4px solid #fff;
+    border-radius: 0;
+}
+
+input:checked+.slider {
+    background-color: #b80f0a;
+}
+
+input:focus+.sliderSml {
+    box-shadow: 0 0 1px #ff5207;
+}
+
+.switchsml {
+    margin-bottom: 0;
+}
+
+.sliderVal {
+    height: 16px;
+    font-size: 16px;
+    border-radius: 0;
+    background-color: #b80f0a;
+}
+
+.inputGrey {
+    background: rgba(0, 0, 0, .5);
+    border-radius: 0;
+}
+
+.inputGrey2 {
+    background: rgba(0, 0, 0, .5);
+    border-radius: 0;
+}
+
+.smlInput {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 0 !important;
+}
+
+.smlInput::placeholder {
+    color: rgba(255, 255, 255, .5);
+}
+
+.accountInput {
+    background-color: rgba(0, 0, 0, .5);
+    font-size: 18px;
+    border-radius: 0 !important;
+}
+
+.accountInput::placeholder {
+    color: rgba(255, 255, 255, .5);
+    font-size: 18px;
+}
+
+.searchBtn {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.accountButton {
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.searchBtn:hover {
+    color: #fff;
+    filter: grayscale(.3);
+    -webkit-filter: grayscale(.3)
+}
+
+.subPassChg {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.subPassChg:hover {
+    background-color: transparent;
+    color: #fff;
+    transform: none;
+}
+
+.lnkTw {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.lnkTw:hover {
+    background-color: transparent;
+    color: #fff;
+    transform: none;
+}
+
+.hostMap {
+    border-radius: 0;
+    border: none;
+}
+
+.hostMapName {
+    text-shadow: none;
+}
+
+.hostMapYear {
+    text-shadow: none;
+}
+
+.hostMapVersion {
+    text-shadow: none;
+}
+
+.hostOpt {
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+}
+
+.optName {
+    text-shadow: none;
+}
+
+.optCheck {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 0;
+}
+
+input:checked+.optCheck {
+    background-color: #b80f0a;
+}
+
+.hostToggle {
+    background-color: transparent;
+    color: #b80f0a;
+    font-size: 15px;
+}
+
+.hostToggle:hover {
+    color: #fff;
+}
+
+.hostPresetBtn {
+    /* background-color: transparent; */
+    color: #ffffff;
+    font-size: 18px;
+}
+
+#presetSelect {
+    background-color: rgba(0, 0, 0, .5); !important;
+    border-radius: 0 !important;
+}
+
+.shopCard {
+    border-radius: 0;
+    text-shadow: none;
+}
+
+.loadMoreD {
+    background-color: transparent;
+    font-size: 18px;
+    color: #ffffff;
+    border-radius: 0;
+}
+
+.loadMoreD:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.loadMoreW {
+    background-color: transparent;
+    font-size: 18px;
+    color: #ffffff;
+    border-radius: 0;
+}
+
+#modVote {
+    font-size: 18px;
+}
+
+.voteHint {
+    background-color: transparent !important;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+.voteHint:hover {
+    color: #fff;
+    filter: none;
+    -webkit-filter: none;
+}
+
+.material-icons.vote {
+    font-size: 32px;
+}
+
+#mapInfo {
+    font-size: 18px;
+    text-transform: none;
+}
+
+#instructions {
+    position: absolute;
+    z-index: 9;
+    color: #ffffff;
+    font-size: 24px;
+    text-transform: none;
+    animation: none;
+    -webkit-animation: none;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    background-color: transparent !important;
+}
+
+::-webkit-scrollbar {
+    width: 4px !important;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0 !important;
+    background-color: #ffffff;
+}
+
+#endTimer {
+    color: #fff;
+    text-shadow: none;
+    font-style: normal;
+}
+
+#endTable {
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.endTableN[style*='color:rgba(255,255,255,0.6)'] {
+    color: #ffffff !important;
+}
+
+.endTableN span[style*="color:#FBC02D"] {
+    color: var(--verified-clan-color) !important;
+}
+
+.endCard {
+    left: 50% !important;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 0;
+}
+
+#tabHolder {
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.tabHeader {
+    color: #ffffff;
+}
+
+.tabHeader:hover {
+    color: #fff;
+    border-bottom: none;
+}
+
+.tabHeader.selected {
+    color: #fff;
+    border-bottom: none;
+}
+
+.endSection {
+    background-color: transparent;
+}
+
+.gfSection {
+    background-color: transparent;
+}
+
+.modeStatus {
+    color: #ffffff !important;
+}
+
+.fundsVal {
+    color: #fff;
+}
+
+#kdLayout {
+    background-color: transparent;
+    border: none;
+}
+
+.crStat {
+    background-color: transparent;
+    border: none;
+}
+
+.crLabel {
+    color: #fff;
+}
+
+.crVal {
+    color: #ffffff;
+}
+
+.xpRnk {
+    width: 0;
+}
+
+.xpLvl {
+    color: #fff;
+}
+
+.xpEndBar {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.xpEndBarB {
+    background-color: #ffffff;
+}
+
+#deathsVal,
+#killsVal,
+#livesDisp,
+#myScoreVal {
+    bottom: 7px;
+    position: relative;
+}
+
+.kfItem {
+    border-radius: 0;
+    background-color: rgba(15, 15, 15,.2);;
+}
+
+#weapDisplay {
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+#voiceDisplay {
+    display: none;
+}
+
+.readAll {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.readAll:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+#loadingBg {
+	position:fixed;
+	left:-16px;
+	right:-16px;
+	top:-16px;
+	bottom:-16px;
+	background-size:cover;
+	background-position:center;
+	pointer-events:none;
+	background-image: url("https://cdn.discordapp.com/attachments/697087943243726918/721445680786178068/ezgif.com-crop.webp");
+}
+
+#aContainer {
+    display: none!important;
+}
+
+.weapKey {
+	display: none;
+}
+
+#weapDisplay {
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+#streamContainer {
+    display: none!important;
+}
+
+#mLevelCont {
+    background-color: rgb(0 0 0 / 0%);
+}
+
+.chatMsg{
+    color: #00FFFF; 
+}
+
+.terms {
+    color: #ffffff;
+    text-transform: none;
+}
+
+#termsInfo {
+    background-color: rgb(0 0 0 / 0%);
+}
+
+.verticalSeparatorInline {
+    display: inline-block;
+    border-left: 4px solid #b80f0a;
+    height: 27px;
+    transform: translateY(4px);
+}
+
+#menuKRCount {
+    color: #b80f0a;
+}
+
+
+.hpBSeg {
+    border-radius: 50px;
+}
+
+.healthBarSeg {
+    border-radius: 50px;
+}
+
+
+#hudClassIcon {
+    display: none;
+}
+
+#healthValueHolder {
+    background-color: transparent;
+    width: 100px;
+    height: 65px;
+    border-radius: 0;
+    position: fixed;
+    left: 30%;
+    bottom: 25%;
+    padding: 0;
+    margin-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+    align-items: center;
+}
+
+#healthValue {
+    color: #b80f0a;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+    margin-top: 0;
+    will-change: unset;
+}
+
+#maxHP {
+    display: none;
+}
+
+#challIcon {
+    display: none !important;
+}
+
+#healthBar {
+    display: none;
+}
+
+#ammoDisplay {
+    background-color: transparent;
+    letter-spacing: 2px;
+    width: 100px;
+    height: 65px;
+    border-radius: 0;
+    position: fixed;
+    right: 31%;
+    bottom: 25%;
+    padding: 0;
+    padding-top: 0;
+    padding-left: 0;
+    transform: none;
+}
+
+#ammoVal {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-left: 12px;
+    text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+
+#ammoMax {
+    display: none;
+}
+
+#ammoIcon {
+    display: none;
+}
+
+#killStreakHolder {
+    position: fixed;
+    left: 53%;
+    top: 80%;
+}
+
+.killStreakItem {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+}
+
+
+#timerDisplay {
+    text-align: center;
+    position: fixed;
+    transform: translateX(-50%);
+    top: 80%;
+    left: 50%;
+    padding: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: transparent;
+    will-change: unset;
+}
+
+#timerVal {
+    font-size: 36px;
+    padding-left: 0;
+    text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+    will-change: unset;
+}
+
+#timerIcon {
+    display: none;
+}
+
+#streakCount {
+    position: fixed;
+    transform: translateX(-50%);
+    top: 85%;
+    left: 50%;
+    background-color: transparent;
+    text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+
+#streakIcon {
+    filter: drop-shadow(2px 2px 3px rgba(30, 30, 30, .5));
+}
+
+#chatHolder {
+    bottom: 20px !important;
+    left: 20px;
+}
+
+.mailText {
+    color: rgb(255 255 255);
+}
+
+#ot-sdk-btn-floating.ot-floating-button {
+    display: none;
+}
+
+#seasonLabel {
+    display: none;
+}
+
+#mainLogo {
+    display: none;
+}
+
+.iconProfile {
+    background-image: url(https://cdn.discordapp.com/attachments/789031334965542922/789031392318193664/profile.png);
+}
+
+.menuItem:hover .iconProfile {
+   background-image: url(https://cdn.discordapp.com/attachments/789031334965542922/789031571901513768/profile-white.png);
+}
+
+.iconShop{
+    background-image: url(https://cdn.discordapp.com/attachments/789031334965542922/789032384086933534/shop.png);
+}
+
+.menuItem:hover .iconShop {
+   background-image: url(https://cdn.discordapp.com/attachments/789031334965542922/789032395663867925/shop-white.png);
+}
+
+.iconChall {
+    background-image: url(https://cdn.discordapp.com/attachments/789031334965542922/789032673178943498/chall.png);
+}
+
+.menuItem:hover .iconChall {
+   background-image: url(https://cdn.discordapp.com/attachments/789031334965542922/789032694331211796/chall-white.png);
+}
+
+.iconSocial {
+    background-image: url(https://cdn.discordapp.com/attachments/789031334965542922/789032875298258985/social.png);
+}
+
+.menuItem:hover .iconSocial {
+   background-image: url(https://cdn.discordapp.com/attachments/789031334965542922/789032883692109824/social-white.png);
+}
+
+.iconGames {
+    background-image: url(https://cdn.discordapp.com/attachments/789031334965542922/789033047751393280/games.png);
+}
+
+.menuItem:hover .iconGames {
+   background-image: url(https://cdn.discordapp.com/attachments/789031334965542922/789033052008611880/games-white.png)
+}
+      
+.iconMods {
+    background-image: url(https://cdn.discordapp.com/attachments/789031334965542922/789033476119855144/mods.png);
+}
+
+.menuItem:hover .iconMods {
+   background-image: url(https://cdn.discordapp.com/attachments/789031334965542922/789033478452805642/mods-white.png)
+}
+
+.iconSettings {
+    background-image: url(https://cdn.discordapp.com/attachments/789031334965542922/789033598879399936/settings.png);
+}
+
+.menuItem:hover .iconSettings {
+   background-image: url(https://cdn.discordapp.com/attachments/789031334965542922/789033602587426836/settings-white.png)
+}

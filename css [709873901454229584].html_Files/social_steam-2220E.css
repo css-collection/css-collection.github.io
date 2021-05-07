@@ -1,0 +1,34 @@
+/* STEAM REQUIREMENTS */
+#aHolder {
+    z-index: -1000 !important;
+}
+
+#aContainer {
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+#rightABox {
+    display: none !important;
+}
+
+#rightFollBox {
+    margin-top: 0px !important;
+}
+
+#androidDB, #iosDB {
+    display: none !important;
+}
+
+#steamDB {
+    right: 20px !important;
+}
+
+#onetrust-group-container {
+    display: none;
+}
+
+/* STYLING */
+* {
+    cursor: url('../imgs/cursor.svg'), auto !important;
+}

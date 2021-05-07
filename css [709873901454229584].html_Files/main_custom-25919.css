@@ -1,0 +1,612 @@
+@font-face{font-family:gamefont;src:url(./fonts/font2.ttf)}@font-face{font-family:headerfont;src:url(./fonts/header.ttf)}
+.iconProfile {
+    background-image: url(https://cdn.discordapp.com/attachments/747682893786120203/761033651994755072/profile.png);
+}
+
+.iconShop {
+    background-image: url(https://cdn.discordapp.com/attachments/747682893786120203/761033744839737344/shop.png);
+}
+
+.iconChall {
+    background-image: url(https://cdn.discordapp.com/attachments/747682893786120203/761033536412581958/chall.png);
+}
+
+.iconSocial {
+    background-image: url(https://cdn.discordapp.com/attachments/747682893786120203/761033777815486495/social.png);
+}
+
+.iconGames {
+    background-image: url(https://cdn.discordapp.com/attachments/747682893786120203/761033563184431204/games.png);
+}
+
+.iconMods {
+    background-image: url(https://cdn.discordapp.com/attachments/747682893786120203/761033618399166484/mods.png);
+}
+
+.iconSettings {
+    background-image: url(https://cdn.discordapp.com/attachments/747682893786120203/761033686002171904/settings.png);
+}
+
+.iconMaps {
+    background-image: url(https://cdn.discordapp.com/attachments/747682893786120203/761033589386248212/maps.png);
+}
+
+.menuItem {
+    color: #311a1a;
+    flex-grow: 1;
+    display: flex;
+    transition: all .1s;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(0,0,0,.75);
+    text-align: center;
+    pointer-events: all;
+    cursor: pointer;
+    background: rgb(0,11,255);
+    background: linear-gradient(0deg, rgba(0,11,255,1) 0%, rgba(241,0,255,1) 100%);
+    border-radius: 50px 0;
+}
+
+.menuItem .menuItemTitle {
+    margin-top: -20%;
+    color: #000;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 50px 0;
+    padding: 12px 18px;
+    padding-top: 14px;
+    margin-bottom: 6px;
+    /* background-color: #ffc147; */
+    /* box-shadow: inset 0 -7px 0 0 #b08531; */
+    text-align: center;
+    color: #fff;
+    text-shadow: -1px -1px 0 #202020, 1px -1px 0 #202020, -1px 1px 0 #202020, 1px 1px 0 #202020, -2px -2px 0 #202020, 2px -2px 0 #202020, -2px 2px 0 #202020, 2px 2px 0 #202020;
+    pointer-events: all;
+    cursor: pointer;
+    -webkit-transition: all .1s;
+    transition: all .1s;
+    background: rgb(0,11,255);
+    background: linear-gradient(0deg, rgba(0,11,255,1) 0%, rgba(241,0,255,1) 100%);
+}
+
+.buttonP {
+    background-color: #1b0aff!important;
+    box-shadow: inset 0 -7px 0 0 #1b0aff!important;
+}
+
+.buttonR {
+    background-color: #ff4747!important;
+    box-shadow: inset 0 -7px 0 0 #1b0aff!important;
+}
+
+.buttonG {
+    background-color: #31caec!important;
+    box-shadow: inset 0 -7px 0 0 #1b0aff!important;
+}
+
+.buttonPI {
+    background-color: #fa50ae!important;
+    box-shadow: inset 0 -7px 0 0 #1b0aff!important;
+}
+
+#menuWindow {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 50px 0;
+    max-height: calc(100% - 480px);
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    overflow-y: auto;
+    display: inline-block;
+    text-align: left;
+    pointer-events: auto;
+    padding: 20px;
+    width: 705px;
+    font-size: 20px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 9px 0 0 #a6a6a6;
+    -moz-box-shadow: 0 9px 0 0 #a6a6a6;
+    box-shadow: 0 9px 0 0 #a6a6a6;
+    background: rgb(0,11,255);
+    background: linear-gradient(0deg, rgba(0,11,255,1) 0%, rgba(241,0,255,1) 100%);
+}
+
+.sliderM {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 15px;
+    background-color: #000000;
+    outline: none;
+    border-radius: 50px 0;
+}
+
+.sliderVal {
+    float: right;
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    color: #fff;
+    line-height: 24px;
+    font-size: 18px;
+    text-align: center;
+    background: #000000;
+    padding: 5px 10px;
+    margin-left: 8px;
+    margin-right: -10px;
+    border-radius: 6px;
+}
+
+.hostPresetBtn {
+    color: rgb(0 0 0);
+    text-align: center;
+    display: inline-block;
+    width: 75px;
+    cursor: pointer;
+    background-color: #f001ff;
+    font-size: 15px;
+    padding: 4px;
+    margin-left: 10px;
+    margin-top: 5px;
+    float: right;
+    border-radius: 50px 0;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 0%);
+    box-shadow: inset 0 0 6px rgb(0 0 0 / 0%);
+    border-radius: 10px;
+    background-color: #f5f5f500;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 50px 0;
+    background: #ee00ff;
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,.6);
+    box-shadow: inset 0 0 2px rgba(0,0,0,.6);
+}
+
+input:checked+.optCheck {
+    background-color: #ee00ff;
+}
+
+.settName, .settNameSmall {
+    clear: both;
+    margin-top: 3px;
+    font-size: 22px;
+    color: rgb(0 0 0);
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #000;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50px 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #a8a8a8;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 27px 0;
+}
+
+element.style {
+    color: rgb(255 0 0);
+}
+
+element.style {
+    color: rgb(255 0 0);
+}
+
+element.style {
+    margin-top: 10px;
+    font-size: 20px;
+    color: rgb(241 0 255);
+}
+
+.changeText {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: rgb(0 0 0);
+}
+
+.mailFrom {
+    font-size: 18px;
+    color: #000000;
+}
+
+.progressBarInner {
+    height: 100%;
+    background: #e600ff;
+    border-radius: 50px 0;
+}
+
+.progressBar {
+    width: 100%;
+    margin-top: -9px;
+    height: 10px;
+    padding: 2px;
+    background: rgba(0,0,0,.9);
+    border-radius: 50px 0;
+}
+
+.loadoutBtn {
+    color: rgb(255 255 255);
+    text-align: center;
+    display: inline-block;
+    width: 75px;
+    cursor: pointer;
+    background-color: #080bff;
+    font-size: 15px;
+    padding: 4px;
+    margin-left: 10px;
+    margin-top: 5px;
+    float: right;
+    border-radius: 6px;
+}
+
+.settText {
+    cursor: pointer;
+    color: #080bff;
+    font-size: 22px;
+    pointer-events: auto;
+}
+
+element.style {
+    color: rgb(5 11 255);
+}
+
+.settText {
+    cursor: pointer;
+    color: #080bff;
+    font-size: 22px;
+    pointer-events: auto;
+}
+
+.clsXPBarC {
+    margin: 4px;
+    background-color: #e600ff;
+    height: 18px;
+    border-radius: 50px 0;
+}
+
+.classXPBar {
+    position: absolute;
+    top: 250px;
+    left: 10px;
+    width: 199px;
+    height: 26px;
+    border-radius: 50px 0;
+    background-color: #242424;
+}
+
+#loadingBg {
+position:fixed;
+left:-16px;
+right:-16px;
+top:-16px;
+bottom:-16px;
+background-size:cover;
+background-position:center;
+pointer-events:none;
+background-image:url(https://ch20webmaster.com/wp-content/uploads/2018/03/Cool-HD-Wallpapers-18.jpg)
+}
+
+.settingsHeader {
+    width: 100%;
+    padding-top: 19px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -.5px;
+    z-index: 999999999;
+    background-color: #fff0;
+    padding-left: 20px;
+    margin-left: -20px;
+}
+
+.serverHeader {
+    width: 100%;
+    padding-top: 19px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999999999;
+    background-color: #fff0;
+    display: table;
+}
+
+* {
+    outline: none;
+    font-family: gamefont;
+    color: #000000;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#healthBar {
+	display: none;
+}
+
+#challIcon {
+	display: none;
+}
+
+#timerDisplay {
+	border-radius: 0px;
+	background-color: #fff;
+}
+
+#timerDisplay2 {
+	border-radius: 0px;
+	display: inline-block;
+	left: 12px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	padding: 10px 20px 10px 10px;
+	position: absolute;
+	text-align: left;
+	top: 190px;
+	transform: translateZ(0);
+	vertical-align: top;
+	width: 412px;
+	will-change: transform;
+	z-index: 3
+}
+
+#timerIcon2 {
+	height: 35px;
+	image-rendering: crisp-edges;
+	width: 35px
+}
+
+#timerVal2 {
+	color: #fff;
+	font-size: 24px;
+	padding-left: 3px;
+	transform: translateZ(0);
+	will-change: transform
+}
+
+
+#ammoDisplay {
+	background-color: transparent;
+	letter-spacing: 0;
+	width: 100px;
+	height: 65px;
+	border-radius: 0;
+	position: fixed;
+	right: 31%;
+	bottom: 25%;
+	padding: 0;
+    padding-top: 0;
+    padding-left: 0;
+}
+
+#ammoVal {
+	color: #fff;
+	text-shadow: 2px 2px 2px rgba(30, 30, 30,) ;
+	font-size: 5vh ;
+	font-weight: 500 ;
+	margin-left: 12px;
+}
+
+#ammoMax {
+	display: none;
+}
+
+#ammoIcon {
+	display: none;
+}
+
+
+#killStreakHolder {
+    position: fixed;
+    left: 53%;
+    top: 80%;
+}
+
+.killStreakItem {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+}
+
+#reloadMsg {
+	background: transparent !important;
+}
+
+#timerVal {
+    font-size: 36px;
+    padding-left: 0;
+    text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+    will-change: unset;
+}
+
+#timerIcon {
+	display: none;
+}
+
+#streakCount {
+    position: fixed;
+    transform: translateX(-50%);
+    top: 85%;
+    left: 50%;
+    background-color: transparent;
+    text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+
+#healthValueHolder {
+	background-color: transparent;
+	width: 100px;
+	height: 65px;
+	border-radius: 0;
+	position: fixed;
+	left: 30%;
+	bottom: 25%;
+	padding: 0;
+    margin-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+	align-items: center;
+}
+
+#bottomLeftHolder {
+	text-align: center;
+}
+
+#healthValue {
+	color: #fff;
+	font-size: 5vh;
+	font-weight: 500;
+	text-align: center;
+	text-shadow: 2px 2px 2px rgba(30, 30, 30, .5);
+	margin-top: 0;
+}
+
+#maxHP {
+	display: none;
+}
+
+#timerDisplay {
+    text-align: center;
+    position: fixed;
+    transform: translateX(-50%);
+    top: 80%;
+    left: 50%;
+    padding: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: transparent;
+    will-change: unset;
+}
+
+.chatItem {
+    max-width: 260px;
+    word-wrap: break-word;
+    display: inline-block;
+    margin-bottom: 0px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 0px;
+    color: #fff;
+    font-size: 14px;
+    background-color: rgba(0,0,0,.2);
+    max-width: 240px;
+    margin-left: 10px;
+    width: 1000px;
+    text-align: center;
+}
+
+#chatInput {
+    width: 100%;
+    padding: 5px;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 18px;
+    box-sizing: border-box;
+    border: none;
+    background-color: rgb(25 9 255 / 46%);
+    border-radius: 6px;
+    pointer-events: all;
+    border-radius: unset;
+}
+
+.accountButton {
+    color: rgb(255 255 255);
+    text-align: center;
+    margin-top: 10px;
+    display: inline-block;
+    width: 342px;
+    cursor: pointer;
+    background-color: #000000;
+    font-size: 22px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 50px 0;
+}
+
+.headerBar {
+    position: absolute;
+    top: 0;
+    height: 70px;
+    padding: 0 12px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(0 0 0 / 0%);
+    pointer-events: auto;
+}
+
+.accountInput {
+    width: 100%;
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 22px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 27px 0;
+    margin-top: 20px;
+    background-color: rgb(0 0 0);
+    color: rgb(255 255 255);
+}
+
+a:visited {
+    color: #000000;
+}
+
+a {
+    cursor: pointer;
+    text-shadow: none;
+    color: #000000;
+    text-decoration: none;
+    pointer-events: all;
+}
+
+.settingsBtn {
+    color: rgb(255 255 255);
+    text-align: center;
+    display: inline-block;
+    width: 75px;
+    cursor: pointer;
+    background-color: #000000;
+    font-size: 17px;
+    padding: 4px 8px;
+    margin-left: 8px;
+    float: right;
+    border-radius: 4px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}

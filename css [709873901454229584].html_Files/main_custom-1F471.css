@@ -1,0 +1,489 @@
+@import url(https://css.reizu.moe/uwu/uwu.css);
+
+:root {
+/*    --text-color: #3f3f3f;
+    --menu-bg-color: rgba(255, 255, 255, 1);
+    --menu-bg-color-secondary: rgba(230, 230, 230, 1); */
+    --accent-color: #284bd2;
+    --health-color: #fff;
+    --ammo-color: #fff;
+    --premium-color: #284bd2;
+    --verified-color: #284bd2;
+    --ingame-bg-color: rgba(15, 15, 15, .2);
+	--text-color: #c0c0c0;
+	--text-color-rgb: 192, 192, 192;
+	--menu-bg-color: rgba(25, 25, 25, 1);
+	--menu-bg-color-secondary: rgba(50, 50, 50, 1);
+    --text-transform: none;
+}
+
+@font-face {
+    font-family: gamefont;
+    src: url(https://raw.githubusercontent.com/South-Paw/typeface-vag-rounded/master/files/vag-rounded-400.woff2);
+}
+
+@font-face {
+	font-family: hpammo;
+	src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2);
+}
+
+#challIcon {
+    display: inline-block !important;
+	position: fixed;
+    width: 35px;
+	height: 35px;
+	left: 41%;
+	bottom: 45px;
+	filter: brightness(0) invert(1) drop-shadow(2px 2px 3px rgba(30, 30, 30, .5));
+}
+
+#ammoIcon {
+    display: inline-block !important;
+	position: fixed;
+    width: 35px;
+	height: 35px;
+	right: 41%;
+	bottom: 42px;
+    margin-right: 0;
+	margin-left: 0;
+	filter: brightness(0) invert(1) drop-shadow(2px 2px 3px rgba(30, 30, 30, .5));
+}
+
+#healthValue {
+	text-align: right;
+	position: fixed;
+	width: 200px;
+	left: 28%;
+	bottom: 25px;
+	font-size: 96px;
+}
+
+#ammoDisplay {
+	width: 50px;
+	height: 4px;
+	top: calc(50% + 35px);
+	left: calc(50% - 25px);
+	background-image: url(https://dummyimage.com/1x1/ffffff/ffffff.png);
+}
+
+#ammoVal {
+    text-align: left;
+    width: 200px;
+    position: fixed;
+    font-size: 96px;
+    right: 27.5%;
+    bottom: 25px;
+}
+
+#weapDisplay {
+	display: none !important;
+}
+
+#reloadMsg {
+	bottom: 150px;
+	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+
+#timerDisplay {
+	width: 200px;
+	height: 80px;
+	background-color: transparent;
+	will-change: unset;
+}
+
+#timerVal {
+	font-size: 64px;
+	padding-left: 0;
+	will-change: unset;
+	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+
+#teamScores {
+	position: fixed;
+	top: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 685px;
+	height: 50px;
+	padding: 10px;
+	padding-left: 0;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	margin-left: 0;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	border-radius: 0;
+	background-color: transparent;
+	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+
+.tScore {
+	display: inline-block;
+}
+
+#tScoreV1 {
+	position: fixed;
+	left: -25%;
+	top: 4px;
+}
+
+#tScoreV2 {
+	position: fixed;
+	left: 25%;
+	top: 4px;
+}
+
+.tScoreT {
+	width: 100%;
+	margin-top: 12px;
+	text-align: center;
+	font-size: 24px;
+	color: #fff;
+	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+	z-index: 2;
+}
+
+.tScoreM {
+	display: none;
+}
+
+.tScoreF {
+	left: 50%;
+	width: 90px;
+	height: 60px;
+	margin-left: 125px;
+	margin-right: 125px;
+	padding-left: 0;
+	padding-right: 0;
+	background-color: #eb5656;
+	color: transparent;
+	opacity: 50%;
+	z-index: 1;
+}
+
+.tScoreF.you {
+	background-color: #5699eb;
+	color: transparent;
+	opacity: 50%;
+	z-index: 1;
+}
+
+.tScoreC {
+	left: 50%;
+	width: 90px;
+	height: 60px;
+	margin-left: 125px;
+	margin-right: 125px;
+	background-color: var(--accent-color);
+	opacity: 50%;
+	z-index: 1;
+}
+
+.tScoreC.you {
+	background-color: #fff;
+	opacity: 50%;
+	z-index: 1;
+}
+
+#gameMessage {
+	top: 80px;
+	font-size: 18px;
+	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+
+#ingameFPS {
+	color: #fff !important;
+	visibility: visible;
+	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+
+#ingameFPS::after {
+    content: ' fps';
+    text-transform: var(--text-transform);
+}
+
+#pingText {
+	color: #fff !important;
+	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+
+#pingText::after {
+    content: ' ms';
+}
+
+#pingIcon {
+	display: none;
+}
+
+#pingDisplay .material-icons {
+	font-size: 20px;
+	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+
+.standout {
+	visibility: shown
+}
+
+.standout::before {
+	display: none
+}
+
+.standout::after {
+	display: none
+}
+
+/* Weapon Display, Epic One */
+
+#weapDisplay[style*="block"] {
+	display: block!important
+}
+
+#weapDisplay {
+    bottom: 15px;
+    right: 50%;
+    transform: translateX(50%)
+}
+
+.weapItem {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.weapIcon {
+	opacity: 0!Important;	
+	transition-delay: 0.3s ease-in-out
+}
+
+.weapIcon[style*="1"] {
+	opacity: 1!important;
+}
+
+#weapIconMel {
+    margin: 0 !important;
+    margin-bottom: -15px!important;
+}
+
+.weapKey {
+    display: none;
+}
+
+/* Move Bottom Right Counter To Normal */
+
+.topRightCounters {
+	position: static;
+	bottom: auto;
+	right: auto;
+	width: 390px!important
+}
+
+/* Dark Mode Fix */
+
+.settingsHeader {
+	background-color: var(--menu-bg-color)
+}
+
+#accResp {
+	color: rgba(var(--text-color-rgb), .5)!important;
+}
+
+#accResp > span {
+	color: rgba(var(--text-color-rgb), .8)!important;
+}
+
+.reqWLvl {
+	color: var(--text-color)
+}
+
+.reqWTxt {
+	color: rgba(var(--text-color-rgb), .5);
+}
+
+div > span[style*="color:rgba(0,0,0,0.6)"] {
+	color: rgba(var(--text-color-rgb), .6)!important;
+}
+
+.mapByTxt {
+	color: rgba(var(--text-color-rgb), .2);
+}
+
+.b {
+	color: rgba(var(--text-color-rgb), .8)!important;
+}
+
+.grey {
+	color: rgba(var(--text-color-rgb), .5);
+}
+
+.grey:visited {
+	color: rgba(var(--text-color-rgb), .5);
+}
+
+#hostMenuBtn {
+	background-color: var(--accent-color);
+	border-radius: 5px
+}
+
+th, tr {
+	border-bottom-color: transparent;
+}
+
+.floatR > span[style*="color:rgba(0,0,0,0.5)"] {
+	color: rgba(var(--text-color-rgb), .5)!important;
+}
+
+div[style*="color:rgba(0,0,0,0.6);margin-bottom:20px"] {
+	color: rgba(var(--text-color-rgb), .6)!important;
+}
+
+div[style*="font-size:17px;color:rgba(0,0,0,0.4);margin-top:5px"] {
+	color: rgba(var(--text-color-rgb), .4)!important;
+}
+
+#itemSearchH {
+	background-color: transparent;
+}
+
+.chalDesc {
+	color: rgba(var(--text-color-rgb), .5);
+}
+
+.floatR > span[style*="color: rgba(0, 0, 0, 0.5);"] {
+	color: rgba(var(--text-color-rgb), .5)!important;
+}
+
+option {
+	background-color: var(--menu-bg-color-secondary)
+}
+
+span[style*="color:rgba(0,0,0,0.4)"] {
+	color: rgba(var(--text-color-rgb), .4)!important;
+}
+
+span[style*="float:right;margin-right:10px;color:rgba(0,0,0,0.5)"] {
+	color: rgba(var(--text-color-rgb), .5)!important;
+}
+
+.partnerItem {
+	color: rgba(var(--text-color-rgb),.4);
+}
+
+#hCustCost {
+	color: rgba(var(--text-color-rgb), .6)!important;
+}
+
+.setHed > span[style*="float:right;color:rgba(0,0,0,0.4)"] {
+	color: rgba(var(--text-color-rgb), .4)!important;
+}
+
+span[style*="float:right;color:rgba(0,0,0,0.4)"] > span {
+	color: var(--text-color)!important
+}
+
+.settName > div[style*="float:right;color:rgba(0,0,0,0.8)"] {
+	color: rgba(var(--text-color-rgb), .8)!important;
+}
+
+#mpCat {
+    background-color: var(--menu-bg-color-secondary);
+    border-color: var(--menu-bg-color);
+}
+
+#mailList {
+	color: rgba(var(--text-color-rgb), .5)!important;
+}
+
+.mailObj, .mailText, .mailDate {
+	color: rgba(var(--text-color-rgb), .5);
+}
+
+.mailObj {
+	border-radius: 12.75px
+}
+
+.speechBox {
+	background-color: var(--menu-bg-color);
+	color: rgba(var(--text-color-rgb), .6);
+}
+
+.speechBox::before {
+	border-color: var(--menu-bg-color)
+}
+
+#clanErr[style*="margin-top:0px;color:rgba(0,0,0,0.5)"] {
+	color: rgba(var(--text-color-rgb), .5)!important;
+}
+
+#clanErr > span[style*="float:right;color:rgba(0,0,0,0.5)"] {
+	color: rgba(var(--text-color-rgb), .5)!important;
+}
+
+#clanErr > span[style*="float:right;color:rgba(0,0,0,0.5)"] > span {
+	color: rgba(var(--text-color-rgb), .8)!important;
+}
+
+#polConfPop {
+	background-color: var(--menu-bg-color)
+}
+
+.xpBarV {
+	color: #fff
+}
+
+/* Misc */
+
+.krIconHost {
+	margin-top: -16px
+}
+
+/* Check Point */
+
+#scoreZoneCount {
+	color: white !important;
+    bottom: 7px;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+
+#scoreZoneCount::after {
+	display: block;
+    position: fixed;
+    margin-top: 1px;
+    margin-left: 3px;
+    font-size: 14px;
+    text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+
+#scoreZoneCount::after {
+	content: " Point"
+}
+
+#scoreZoneCount > i {
+    display: none!important
+}
+
+/* Host */
+
+.hostMapYear, .hostMapVersion {
+    display: none
+}
+
+.hostMapBy {
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    text-shadow: 2px 2px 0px #000000;
+}
+
+.hostMapName {
+    left: 50%;
+    top: 25%;
+    transform: translateX(-50%);
+    text-align: center;
+    text-shadow: 2px 2px 0px #000000;
+}

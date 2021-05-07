@@ -1,0 +1,561 @@
+@font-face {
+	font-family: gamefont;
+	src: url(https://fonts.gstatic.com/s/inter/v2/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2);
+}
+
+@font-face {
+	font-family: hpammo;
+	src: url(https://reizu.moe/fonts/Renogare.ttf);
+}
+
+element.style {
+	display: none;
+}
+element.style {
+    font-size: 80px;
+    color: #13d5f2;
+}
+element.style {
+    color: rgb(220 15 64 / 30%);
+}
+#popupContent {
+    pointer-events: auto;
+    border-radius: 16px;
+    background-color: rgb(53 124 137 / 75%);
+    padding: 15px;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-60%);
+    color: #fff;
+}
+.profilePic {
+    width: 110px;
+    height: 110px;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    background-color: rgba(0,0,0,.2);
+    border-radius: 40px;
+}
+.classCard {
+    text-shadow: -1px -1px 0 #202020, 1px -1px 0 #202020, -1px 1px 0 #202020, 1px 1px 0 #202020, -2px -2px 0 #202020, 2px -2px 0 #202020, -2px 2px 0 #202020, 2px 2px 0 #202020, -3px -3px 0 #202020, 3px -3px 0 #202020, -3px 3px 0 #202020, 3px 3px 0 #202020;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 12px;
+    margin-left: 10px;
+    margin-right: 7px;
+    padding: 10px;
+    width: 229px;
+    height: 270px;
+    vertical-align: top;
+    background-color: rgba(0,0,0,.3);
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 26px;
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+}
+#filterPop {
+    width: 390px;
+    pointer-events: auto;
+    border-radius: 16px;
+    background-color: rgb(42 160 151 / 75%);
+    padding: 15px;
+    text-align: left;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+    color: #2ec7b1;
+}
+.marketCard {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    width: 210px;
+    height: 215px;
+    vertical-align: top;
+    background-color: rgba(0,0,0,.6);
+    border-radius: 24px;
+    display: inline-block;
+    z-index: 1;
+    pointer-events: auto;
+    cursor: pointer;
+}
+html, body {
+    background-image: url(https://i.pinimg.com/originals/1b/28/b4/1b28b4f00e6c243d3a37b9dd706c7c6a.gif);
+    background-size: cover;
+    height: 100%
+}
+.leaderBtn {
+    color: #69f9ff!important;
+    margin-right: 2px;
+    margin-left: 2px;
+    background-color: rgba(0,0,0,.2);
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+    border-radius: 16px;
+    display: inline-block;
+    cursor: pointer;
+}
+#navTitle {
+    top: 12px;
+    position: absolute;
+    font-size: 35px;
+    color: #8dfbf6;
+    z-index: 11;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.scrollItem {
+    vertical-align: top;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 680px;
+    text-align: left;
+    background-color: #30ffe8;
+}
+* {
+    outline: none;
+    font-family: gamefont;
+    color: #ff23ef;
+}
+#offerPop {
+    pointer-events: auto;
+    border-radius: 24px;
+    background-color: rgb(59 156 148 / 75%);
+    padding: 15px;
+    text-align: left;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-51%) scale(.8);
+    color: #22e5ee;
+    width: 679px;
+}
+#loginPop {
+    pointer-events: auto;
+    border-radius: 24px;
+    background: linear-gradient(45deg, blue, #4e9898, #a83b86);
+    padding: 15px;
+    text-align: left;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+    color: #fff;
+    width: 372px;
+}
+.accountButton {
+    color: rgba(255,255,255,.7);
+    text-align: center;
+    margin-top: 10px;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    background-color: #2196f3;
+    font-size: 22px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 12px;
+}
+.accountInput {
+    width: 100%;
+    padding: 5px;
+    padding-left: 10px;
+    margin-top: 10px;
+    font-size: 22px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 12px;
+}
+.mapListItem2 {
+	border-radius: 16px;
+}
+.tOfferBtn.remove {
+    background-color: #eb5656;
+    width: 670px;
+    border-radius: 14px;
+}
+.material-icons.mic1 {
+    font-size: 50px;
+    color: #3dbcba;
+}
+#marketSearchB {
+    color: #4dfffe;
+    background-color: #6ebfb5;
+    font-size: 19px;
+    padding: 10px;
+    margin-left: 2px;
+    vertical-align: top;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+.cardActions {
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.85);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255,255,255,.5);
+    font-size: 12px;
+    transition: .2s opacity;
+    border-radius: 22px;
+}
+#navBar {
+    color: #fff;
+    background-color: rgba(0,0,0,.65);
+    width: 100%;
+    background: linear-gradient(45deg, blue, #66e0ff, aqua);
+    height: 85px;
+}
+.lds-ring {
+	visibility: hidden;
+}
+.menuItem .menuItemTitle {
+    margin-top: -20%;
+    color: #19e3e8;
+}
+
+
+.menuItem {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #1a75a28c;
+    border-radius: 34px 0%;
+             box-shadow: 1px 12px 16px #27a1a6;
+     
+    text-align: center;
+    poisor: pointer;
+    flex-direction: column;
+}
+.menuItem:hover {
+    background: #100e09;
+    border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 18px #1acbd0;
+}
+
+
+.menuItem:active {
+    background: #19e3e8
+     border: 1px solid;
+ 
+}
+.headerBar {
+    position: absolute;
+    top: 0;
+    height: 70px;
+    padding: 0 12px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(8 223 245 / 50%);
+    pointer-events: auto;
+}
+.button {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 12px 18px;
+    padding-top: 14px;
+    margin-bottom: 6px;
+    background-color: #ffc147;
+    box-shadow: inset 0 -7px 0 0 #b08531;
+    text-align: center;
+    color: #fff;
+    text-shadow: -1px -1px 0 #202020, 1px -1px 0 #202020, -1px 1px 0 #202020, 1px 1px 0 #202020, -2px -2px 0 #202020, 2px -2px 0 #202020, -2px 2px 0 #202020, 2px 2px 0 #202020;
+    pointer-events: all;
+    cursor: pointer;
+    -webkit-transition: all .1s;
+    transition: all .1s;
+}
+#merchImg {
+	display: none;
+}
+#menuWindow {
+    background: linear-gradient(45deg, blue, #4e9898, #a83b86);
+    border-radius: 12% !important;
+    bottom: 294.895px;
+    top: auto !important;
+    box-shadow: 0 9.6px 0 0 #070707 !important;
+    display: inline-block !important;
+    right: auto !important;
+    max-height: calc(100% - 50%) !important;
+    overflow-y: auto !important;
+    padding: 1% !important;
+    pointer-events: auto !important;
+    position: absolute !important;
+    text-align: left !important;
+    transform: none !important;
+    width: 723.072px !important;
+    z-index: 2 !important;
+}
+.button.small {
+	background: linear-gradient(45deg, purple, aqua, green)
+}
+.settingsHeader {
+    background: linear-gradient(45deg, #004dff, #00b2c7, #ff22db);
+    width: 100%;
+    padding-top: 19px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -.5px;
+    z-index: 999999999;
+    background-color: #fff;
+    padding-left: 20px;
+    margin-left: -20px;
+    border-radius: 16px;
+}
+#customizeButton {
+    background: linear-gradient(45deg, magenta, green, #66e0ff);
+}
+.serverHeader {
+    width: 100%;
+    padding-top: 19px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999999999;
+    background-color: #fff;
+    display: table;
+    background: linear-gradient(45deg, #008aff, #7769ca, #ff14e0);
+    border-radius: 12px;
+}
+.changeText {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: rgb(1 1 1);
+}
+element.style {
+    color: #000000;
+}
+.settText {
+    cursor: pointer;
+    color: #000000;
+    font-size: 22px;
+    pointer-events: auto;
+}
+.endCard {
+    padding: 10px;
+    background-color: rgb(67 134 170 / 50%);
+    border-collapse: collapse;
+    box-sizing: border-box;
+    text-align: left;
+    border-radius: 6px;
+    height: min-content;
+    display: inline-block;
+    vertical-align: top;
+    max-height: 100%;
+    min-width: 100%;
+}
+#menuClassContainer {
+position: fixed;
+left: 18%;
+top: 50%;
+transform: translate(-50%, -50%);
+}
+#instructions {
+	top: 75%;
+}
+.leaderNameM {
+    color: aqua;
+}
+#tradeChatInput {
+position: fixed;
+left: 50%;
+top: 75%;
+transform: translate(-50%, -50%);
+}
+img#mainLogo {
+    visibility: hidden;
+}
+
+#gameNameHolder:after {
+    content: "Krunker.io";
+    position: absolute;
+    top: 86px;
+    /* font-size: 64px; */
+    color: white;
+}
+
+#gameNameHolder {
+    padding-right: 62px;
+    top: 21px;
+    font-size: 76px;
+    position: absolute;
+    text-align: center;
+}
+
+#gameNameHolder:before,#gameNameHolder:after {
+    display: block;
+    content: "FRZN";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .8
+    white-space: pre;
+}
+
+
+#ammoDisplay {
+	background-color: transparent;
+	letter-spacing: 0;
+	width: 100px;
+	height: 65px;
+	border-radius: 0;
+	position: fixed;
+	right: 31%;
+	bottom: 25%;
+	padding: 0;
+	padding-top: 0;
+	padding-left: 0;
+	transform: none;
+}
+
+#ammoVal {
+	color: var(--ammo-color);
+	font-family: hpammo;
+	font-size: 48px;
+	margin-left: 12px;
+	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+
+#ammoMax {
+	display: none;
+}
+
+#ammoIcon {
+	display: none;
+}
+#weapDisplay {
+    position: absolute;
+    flex-direction: column;
+    z-index: 1;
+    right: 20px;
+    bottom: 500px;
+}
+}
+
+.weapItem {
+	margin-top: 0;
+}
+
+
+.weapIcon {
+	width: 100px;
+	height: 50px
+}
+#killCardHolder {
+	top: 75%;
+	border-radius: 16px;
+}
+#mapInfo {
+    color: #24edff;
+    font-size: 22px;
+}
+#challIcon {
+    display: none;
+}
+.leaderNameM span[style] {
+    webkit-animation: rainbowT .5s linear infinite;
+    animation: rainbowT .5s linear infinite;!important
+}
+#streamContainer {
+    display: none;
+}
+#uiBase.onMenu #voiceDisplay {
+    display: none;
+}
+#uiBase.onMenu #spectButton {
+    display: none!important;
+}
+.iconProfile {
+    background-image: url(https://media.discordapp.net/attachments/696370585978273822/734711679010472036/J70tEhP.png?width=103&height=103);
+}
+
+.iconShop {
+    background-image: url(https://media.discordapp.net/attachments/696370585978273822/734711702339321947/Bpo3mhS.png?width=103&height=103);
+}
+
+.iconChall {
+    background-image: url(https://media.discordapp.net/attachments/696370585978273822/734711607573348372/0yPDyS1.png?width=103&height=103);
+}
+
+.iconSocial {
+    background-image: url(https://media.discordapp.net/attachments/696370585978273822/734801637427904612/social.png?width=115&height=115);
+}
+
+.iconGames {
+    background-image: url(https://media.discordapp.net/attachments/696370585978273822/734711631019376720/axVWOlq.png?width=103&height=103);
+}
+
+.iconMods {
+    background-image: url(https://media.discordapp.net/attachments/696370585978273822/734711643157823578/gOHuDn7.png?width=103&height=103);
+}
+
+.iconSettings {
+    background-image: url(https://media.discordapp.net/attachments/696370585978273822/734711659393843291/wdsXWvW.png?width=103&height=103);
+}
+#chatInput {
+    border-radius: 50px!important;
+    text-align: center;
+    padding-left: 0px;
+}
+
+#chatHolder{
+    transition: .5s;
+}
+
+::-webkit-scrollbar {
+    width: 0px!important;
+}
+
+.chatItem {
+    max-width: 260px;
+    word-wrap: break-word;
+    display: block;
+    margin-bottom: -20px;
+    padding: 5px;
+    /* padding-left: 10px; */
+    padding-right: 10px;
+    border-radius: 0px;
+    color: #fff;
+    font-size: 14px;
+    background-color: rgb(0 0 0 / 9%);
+    /* max-width: 240px; */
+    margin-left: 10px;
+    text-align: center;
+    margin-right: 10px;
+}
